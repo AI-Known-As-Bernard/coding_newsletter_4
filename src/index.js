@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Index from './pages/Index'
 import './styles/main.css'
-
+import Index from './pages/Index'
+import Blog from './pages/Blog'
+import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
+const router = createBrowserRouter([
+  {path: '/', element:<Index/>},
+  {path:'/blog', element:<Blog/>},
+])
+
 root.render(
   <React.StrictMode>
-    <Index/>
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 

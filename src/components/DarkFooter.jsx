@@ -68,7 +68,7 @@ const DarkFooter = () => {
             </p>
             <div className="flex gap-x-6">
               {navigation.socialMedia.map((item) => (
-                <a key={item.name} url={item.url} className="text-gray-400 hover:text-gray-300">
+                <a key={item.name} href={item.url} className="text-gray-400 hover:text-gray-300">
                   <span className="sr-only">{item.name}</span>
                   <item.icon aria-hidden="true" className="size-6" />
                 </a>
@@ -82,7 +82,7 @@ const DarkFooter = () => {
                 <ul className="mt-6 space-y-4">
                   {navigation.services.map((item) => (
                     <li key={item.name}>
-                      <a url={item.url} className="text-sm/6 text-gray-400 hover:text-white">
+                      <a href={item.url} className="text-sm/6 text-gray-400 hover:text-white">
                         {item.name}
                       </a>
                     </li>
@@ -94,7 +94,7 @@ const DarkFooter = () => {
                 <ul  className="mt-6 space-y-4">
                   {navigation.helpfulLinks.map((item) => (
                     <li key={item.name}>
-                      <a url={item.url} className="text-sm/6 text-gray-400 hover:text-white">
+                      <a href={item.url} className="text-sm/6 text-gray-400 hover:text-white">
                         {item.name}
                       </a>
                     </li>
@@ -108,7 +108,7 @@ const DarkFooter = () => {
                 <ul  className="mt-6 space-y-4">
                   {navigation.company.map((item) => (
                     <li key={item.name}>
-                      <a url={item.url} className="text-sm/6 text-gray-400 hover:text-white">
+                      <a href={item.url} className="text-sm/6 text-gray-400 hover:text-white">
                         {item.name}
                       </a>
                     </li>
@@ -120,7 +120,7 @@ const DarkFooter = () => {
                 <ul  className="mt-6 space-y-4">
                   {navigation.legal.map((item) => (
                     <li key={item.name}>
-                      <a url={item.url} className="text-sm/6 text-gray-400 hover:text-white">
+                      <a href={item.url} className="text-sm/6 text-gray-400 hover:text-white">
                         {item.name}
                       </a>
                     </li>
