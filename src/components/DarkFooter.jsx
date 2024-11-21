@@ -52,7 +52,7 @@ const DarkFooter = () => {
     }
   return (
     <footer className="bg-gray-900">
-      <div className="mx-auto max-w-7xl px-6 pb-8 pt-12 sm:pt-24 lg:px-8 lg:pt-32">
+      <div className="mx-auto max-w-7xl px-6 pb-8 pt-6 sm:pt-12 lg:px-8 lg:pt-24">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
             <span className="flex items-start">
@@ -61,7 +61,7 @@ const DarkFooter = () => {
                 src={navigation.logo}
                 className="h-16"
                 />
-                <p className="text-white text-xl font-bold">North-East Coding</p>
+                <p className="text-white text-xl ml-3 mt-5 mb-0 font-bold">North-East Coding</p>
             </span>
             <p className="text-balance text-sm font-bold text-gray-300">
               {navigation.message}
@@ -130,7 +130,7 @@ const DarkFooter = () => {
             </div>
           </div>
         </div>
-        <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+        <div className="border-t border-white/10 pt-8">
           <p className="text-sm/6 text-gray-400">&copy; {navigation.year} {navigation.companyName} All rights reserved.</p>
         </div>
       </div>
