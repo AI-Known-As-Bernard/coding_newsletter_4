@@ -3,7 +3,7 @@ import React from 'react'
 const SimpleNavbar = () => {
   let navigation ={
     alt:"west-mec coding logo",
-    organization:"NEC-Coding Newsletter",
+    organization:"NEC-Coding",
     logo: "https://res.cloudinary.com/west-mec-north-east-campus-coding/image/upload/v1652816912/NewsLetter/WM-Coding_b2q0dl.svg",
     links:[{name:"Home", url:"/"},{name:"Blog", url:"/blog"},{name:"FBLA", url:"/fbla"},{name:"Students", url:"/students"},{name:"Alumni", url:"/alumni"}]
   }
@@ -34,7 +34,7 @@ const SimpleNavbar = () => {
                 <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                     {navigation.links.map((link, index) =>(
                        <li key={index}>
-                       <a href={link.url} className="block py-2 pr-4 text-xl pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">{link.name}</a>
+                       <a href={link.url} className="block py-2 pr-4 text-xl pl-3 text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">{link.name}</a>
                         </li>
                     ))}
                   </ul>
